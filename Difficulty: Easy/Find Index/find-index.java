@@ -35,7 +35,7 @@ System.out.println("~");
 class Solution {
     // Function to find starting and end index
     static int[] findIndex(int arr[], int key) {
-        // code here.
+        
         int n = arr.length;
         int start = -1;
         int end = -1;
