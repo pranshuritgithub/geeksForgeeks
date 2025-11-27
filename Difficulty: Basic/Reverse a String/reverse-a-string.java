@@ -4,20 +4,12 @@ class Solution {
     public static String reverseString(String s) {
         // code here
         int n = s.length();
-        char arr[] = s.toCharArray();
+        StringBuilder sb = new StringBuilder();
         
-        int left = 0;
-        int right = n-1;
-        
-        while(left < right)
+        for(int i = n-1;i>=0;i--)
         {
-            char temp = arr[left];
-            arr[left] = arr[right];
-            arr[right] = temp;
-            
-            left++;
-            right--;
+            sb.append(s.charAt(i));
         }
-        return new String(arr);
+        return sb.toString();
     }
 }
